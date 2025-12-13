@@ -220,6 +220,46 @@ document.addEventListener('DOMContentLoaded', function () {
     images.forEach(img => imageObserver.observe(img));
 
     // ============================================
+    // CONTACT FORM HANDLING
+    // ============================================
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const course = document.getElementById('course').value;
+            const message = document.getElementById('message').value;
+
+            // Simple validation
+            if (name && phone && course && message) {
+                // Determine WhatsApp message content
+                // Encoding the message for URL
+                const encodedMessage = encodeURIComponent(
+                    `*New Inquiry from Website*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Course:* ${course}\n*Message:* ${message}`
+                );
+
+                // Open WhatsApp with pre-filled message (using one of the admin numbers)
+                // Using 9080380853 as the primary contact for inquiries
+                const whatsappUrl = `https://wa.me/919080380853?text=${encodedMessage}`;
+
+                // Open in new tab
+                window.open(whatsappUrl, '_blank');
+
+                // Show success message
+                // alert('Thank you! Redirecting to WhatsApp to send your message.');
+
+                // Reset form
+                contactForm.reset();
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    }
+
+    // ============================================
     // CONSOLE MESSAGE
     // ============================================
     console.log('%c🎓 Kanavugal Academy - You Dream We Sculpt', 'font-size: 20px; font-weight: bold; color: #0066cc;');
