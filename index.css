@@ -466,7 +466,7 @@ a:hover {
 
 .course-card {
     text-align: center;
-    padding: var(--spacing-xl);
+    padding: 1.5rem;
     width: 100%;
 }
 
