@@ -296,3 +296,5 @@ function throttle(func, limit) {
         }
     };
 }
+var day = new Date().getFullYear()
+document.getElementById('day').textContent = day
