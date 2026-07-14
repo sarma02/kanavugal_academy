@@ -1,0 +1,11 @@
+/* TEAM */
+Author: Kanavugal Academy Pvt Ltd
+Website: https://kanavugalacademy.com
+Developed By: Kafty Technologies
+Developer Website: https://kaftytechnologies.in
+
+/* SITE */
+Last update: 2026/07/14
+Standards: HTML5, CSS3, JavaScript
+Components: Font Awesome, Google Fonts
+Software: Static HTML

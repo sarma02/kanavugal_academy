@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found. The page you are looking for might have been removed or is temporarily unavailable.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Page Not Found | Kanavugal Academy</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./assets/logo.jpeg" type="image/x-icon">
+
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-xl) 0;
+            background: var(--gradient-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-container::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0, 102, 204, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .error-card {
+            max-width: 600px;
+            width: 90%;
+            padding: var(--spacing-2xl);
+            text-align: center;
+            z-index: 1;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: var(--spacing-sm);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .error-title {
+            font-size: 2rem;
+            color: var(--primary-blue-dark);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .error-desc {
+            font-size: 1.1rem;
+            color: var(--gray);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .error-actions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            justify-content: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        @media (min-width: 576px) {
+            .error-actions {
+                flex-direction: row;
+                gap: var(--spacing-md);
+            }
+        }
+
+        .quick-links {
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-lg);
+            border-top: 1px solid var(--light-gray);
+        }
+
+        .quick-links h3 {
+            font-size: 1.2rem;
+            color: var(--dark-gray);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .quick-links-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .quick-link-btn {
+            font-size: 0.9rem;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: var(--off-white);
+            color: var(--primary-blue);
+            border: 1px solid var(--light-gray);
+            transition: all var(--transition-fast);
+        }
+
+        .quick-link-btn:hover {
+            background: var(--primary-blue);
+            color: var(--white);
+            border-color: var(--primary-blue);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-container">
+        <div class="card card-glass error-card">
+            <div class="logo flex-center" style="margin-bottom: var(--spacing-md);">
+                <img src="./assets/logo.png" alt="Kanavugal Academy Logo" class="logo-img" width="47" height="50">
+                <span style="font-size: 1.8rem; margin-left: 10px;">Kanavugal Academy</span>
+            </div>
+
+            <div class="error-code">404</div>
+            <h1 class="error-title">Page Not Found</h1>
+            <p class="error-desc">
+                The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+            </p>
+
+            <div class="error-actions">
+                <a href="index.html" class="btn btn-primary"><i class="fas fa-home" style="margin-right: 8px;"></i>Go to Homepage</a>
+                <a href="index.html#contact" class="btn btn-outline"><i class="fas fa-envelope" style="margin-right: 8px;"></i>Contact Support</a>
+            </div>
+
+            <div class="quick-links">
+                <h3>Explore Our Primary Coaching Programs</h3>
+                <nav aria-label="404 Quick Links" class="quick-links-grid">
+                    <a href="bank-exam-coaching-madurai.html" class="quick-link-btn">Bank Exam Coaching</a>
+                    <a href="tnpsc-coaching-centre-madurai.html" class="quick-link-btn">TNPSC Coaching</a>
+                    <a href="iit-jee-foundation-courses.html" class="quick-link-btn">IIT JEE Foundation</a>
+                    <a href="neet-foundation-courses.html" class="quick-link-btn">NEET Foundation</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
